@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/LCMAndroid.iml" filepath="$PROJECT_DIR$/.idea/LCMAndroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/LCMAndroid.iml" filepath="$PROJECT_DIR$/LCMAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lcm/lcm.iml" filepath="$PROJECT_DIR$/lcm/lcm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simple/simple.iml" filepath="$PROJECT_DIR$/simple/simple.iml" />
     </modules>
   </component>
 </project>

@@ -1,4 +1,4 @@
-package com.example.jia.lcm;
+package com.jiakaiyang.lcm.library;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
