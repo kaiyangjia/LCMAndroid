@@ -1,1 +1,1 @@
-include ':lcm', ':simple', ':library'
+include ':simple', ':library'
