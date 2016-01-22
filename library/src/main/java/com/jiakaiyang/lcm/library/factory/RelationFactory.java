@@ -4,6 +4,7 @@ import com.jiakaiyang.lcm.library.product.LCMRelation;
 
 import java.util.Collection;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import static com.jiakaiyang.lcm.library.utils.CollectionUtils.getMaxInt;
@@ -34,12 +35,12 @@ public class RelationFactory {
 
     /**
      * 根据已有的id创建id不重复的关系
-     * @param curList
+     * @param map
      * @return
      */
-    public LCMRelation createRelation(List<LCMRelation> curList){
+    public LCMRelation createRelation(Map<Integer, LCMRelation> map){
         LCMRelation relation = createRelation();
-        relation.setId(getMaxInt(curList) + 1);
+        relation.setId(getMaxInt(map) + 1);
         return relation;
     }
 }

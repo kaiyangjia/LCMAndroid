@@ -10,10 +10,12 @@ import java.util.List;
  * Created by kaiyangjia on 2016/1/21.
  */
 public class LCMListAdapter<T> extends LCMBaseAdapter {
+    private int ResId;
 
-    public LCMListAdapter(Context context, List<T> data) {
+    public LCMListAdapter(Context context, List<T> data, int ResId) {
         super.context = context;
         super.data = data;
+        this.ResId = ResId;
     }
 
     /**
@@ -28,6 +30,6 @@ public class LCMListAdapter<T> extends LCMBaseAdapter {
 
     @Override
     public int getItemResource() {
-        return 0;
+        return ResId;
     }
 }
