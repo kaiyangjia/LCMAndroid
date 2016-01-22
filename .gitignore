@@ -1,8 +1,0 @@
-.gradle
-.gitignore
-/local.properties
-/.idea
-/.git
-.DS_Store
-/build
-/captures
