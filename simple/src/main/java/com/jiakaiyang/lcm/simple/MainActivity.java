@@ -8,6 +8,15 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
+
+import com.jiakaiyang.lcm.library.manager.RelationManager;
+import com.jiakaiyang.lcm.library.utils.TypeUtils;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +35,26 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        test();
+    }
+
+
+    private void test(){
+        RelationManager relationManager = new RelationManager();
+        ListView listView = (ListView) findViewById(R.id.list_test);
+
+        List data = new ArrayList<>();
+        for(int i=0;i<10;i++){
+            TestBean bean = new TestBean(18, "jia");
+            data.add(bean);
+        }
+        int id = relationManager.bind(listView, data.get(0), R.layout.item_list);
+        Map<Integer, String> bulidMap = new HashMap<>();
+        bulidMap.put(R.id.item_age, "age");
+        bulidMap.put(R.id.item_name, "name");
+        relationManager.buildMapping(bulidMap, id);
+        relationManager.show(this, id, data);
     }
 
     @Override

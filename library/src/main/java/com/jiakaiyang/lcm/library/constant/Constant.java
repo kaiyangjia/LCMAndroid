@@ -8,4 +8,8 @@ public class Constant {
         TYPE_TEXT,
         TYPE_IMAGE,
     }
+
+    public class KEYS{
+
+    }
 }
