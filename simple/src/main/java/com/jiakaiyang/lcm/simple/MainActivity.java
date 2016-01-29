@@ -46,13 +46,14 @@ public class MainActivity extends AppCompatActivity {
 
         List data = new ArrayList<>();
         for(int i=0;i<10;i++){
-            TestBean bean = new TestBean(18, "jia");
+            TestBean bean = new TestBean(78, "http://content.12530.com/web/p/new/artist/20130703/31687/l_9zLQOlNiflx5liaL.jpg" ,"Plant");
             data.add(bean);
         }
         int id = relationManager.bind(listView, data.get(0), R.layout.item_list);
         Map<Integer, String> bulidMap = new HashMap<>();
         bulidMap.put(R.id.item_age, "age");
         bulidMap.put(R.id.item_name, "name");
+        bulidMap.put(R.id.item_avatar, "avatar");
         relationManager.buildMapping(bulidMap, id);
         relationManager.show(this, id, data);
     }

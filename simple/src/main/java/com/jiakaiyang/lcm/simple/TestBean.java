@@ -6,9 +6,11 @@ package com.jiakaiyang.lcm.simple;
 public class TestBean {
     private String name;
     private int age;
+    private String avatar;
 
-    public TestBean(int age, String name) {
+    public TestBean(int age, String avatar, String name) {
         this.age = age;
+        this.avatar = avatar;
         this.name = name;
     }
 }
